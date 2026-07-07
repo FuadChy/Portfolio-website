@@ -148,3 +148,66 @@ what-i-do-parent{
     margin: 25px auto;
     padding: 5px;
 }
+
+/* amazing works css */
+
+.my-amazing-parent{
+text-align: center;
+}
+.gallery{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six";
+}
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box1{
+grid-area: one;
+}
+.box2{
+grid-area: two;
+}
+.box3{
+grid-area: three;
+}
+.box4{
+grid-area: four;
+}
+.box5{
+grid-area: five;
+}
+.box6{
+grid-area: six;
+}
+footer{
+    text-align: center;
+    margin-top: 70px !important;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    background-color: #f8e2d5;
+}
+
+footer form{
+    padding: 20px;
+}
+.footer-left p{
+    margin: 15px 0px;
+}
+footer form input, footer form textarea{
+    border: none;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
